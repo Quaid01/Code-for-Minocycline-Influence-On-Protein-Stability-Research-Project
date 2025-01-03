@@ -30,18 +30,17 @@ Download the following files for simulations:
 - [Code for Experimental (FOR WITH MINOCYCLINE)]
 - [Excel Template for Collecting Data]
 
-The code is purely coded in Python, check the [Dependencies](#) section to download OpenMM and PyRoseTTA. 
+The code is purely coded in Python, check the [Dependencies](#https://github.com/Quaid01/Code-for-Minocycline-Influence-On-Protein-Stability-Research-Project/edit/main/README.md#dependencies) section to download OpenMM and PyRoseTTA. 
 
-### Running the Code**
+### Running the Code
 
 Make sure that all the files are in a single folder/directory that you will run the code from. Simply open up the code and edit a handful of set values:
 
-- 'output_file_excel_name': used to change the name of the output Excel File (.xlsx)
-- 'protein': Change the name inside the brackets to one of the names of the protein that is stored in the 'Proteins' dictionary
-- 'platform': Change the platform name to one of the ones mentioned [here](#), OpenMM has optimization for NVIDIA GPU's, but any GPU is ideal. Take a look at the OpenMM documentation for more information or look online.
-- 'simulation_drug.reporters.append(
-    DCDReporter('trajectory.dcd', reporting_steps)  # Save every 1000 steps
-)': Change the 'trajectory.dcd' argument to another name with the .dcd extension to change the name of the trajectory output file
+- `output_file_excel_name`: used to change the name of the output Excel File (.xlsx)
+- `protein`: Change the name inside the brackets to one of the names of the protein that is stored in the `proteins` dictionary
+- `platform`: Change the platform name to one of the ones mentioned [here](#), OpenMM has optimization for NVIDIA GPU's, but any GPU is ideal. Take a look at the OpenMM documentation for more information or look online.
+- `simulation_drug.reporters.append(
+    DCDReporter('trajectory.dcd', reporting_steps)`: Change the `trajectory.dcd` argument to another name with the .dcd extension to change the name of the trajectory output file
 
 ## Dependencies, Licensing, and Attribution
 
@@ -68,4 +67,4 @@ This project is intended for academic and educational purposes only. Users are r
 
 ### Acknowledgments
 
-The developers of OpenMM and PyRosetta for providing essential tools for this research.
+The developers of OpenMM and PyRosetta for providing the essential tools for this research.
