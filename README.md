@@ -17,12 +17,25 @@ Traumatic brain injuries (TBI) is one of the leading causes of mortality and lon
 
 Simulation Details:
 
+- Simulation Type: NVT (Constant # of Moles, Volume, and Temperature)
 - Simulation Length: 200 Nanoseconds
+- Equilibriation Length: 2 Nanoseconds
+- Step Size: 0.002 Picoseconds
+- Time Between "Snapshots": 0.1 Nanoseconds
+- Integrator: Langevin Middle Integrator
 - Temperature: 312K
-- 
+- Friction: 1/Picosecond
+- Force Fields: 'protein.ff14SB.xml', 'implicit/obc1.xml', ('UNK_6D5600.xml' for experimental)
+- Solvent Type: Implicit
+- Nonbonded Method: CutoffNonPeriodic 
+- Nonbonded Cutoff: 1 Nanometer,
+- Constraints: HBonds
+
+If any of the simulation details look smaller than they should, it's because we didn't have the resources to run the simulation for any longer, as with an RTX 4060ti and Ryzen 5700h it still took 12 hours to run one simulation for one protein. We have 4 simulations to run for 1 complete set of data, and we don't have access to any fancy computers. So this was the best we could do with the resources we hadd.
+
 ## How to Use
 
-Please note that this code will produce several files such as 2500 pdb files (< 248 KB each), a trajectory.dcd file, .log file, and a .xlsx file.
+Please note that this code will produce several files such as 2000 pdb files (< 248 KB each), a trajectory.dcd file, .log file, and a .xlsx file.
 
 Download the following files for simulations:
 
@@ -72,4 +85,4 @@ This project is intended for academic and educational purposes only. Users are r
 
 ### Acknowledgments
 
-The developers of OpenMM and PyRosetta for providing the essential tools for this research.
+A thank you to the developers of OpenMM and PyRosetta for providing the essential tools for this research.
