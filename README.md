@@ -1,6 +1,6 @@
 # Code-for-Minocycline-Influence-On-Protein-Stability-Research-Project
 
-This is the code for the research project that me (Ali), Owen, and Anthony did. The code uses OpenMM and PyRoseTTA as dependencies, so make sure that your operating system supports them (along with Python of course).
+This is the code for the research project that me (Ali Zahid), Owen Zhang, and Anthony Hur did. The code uses OpenMM and PyRoseTTA as dependencies, so make sure that your operating system supports them (along with Python of course).
 
 **Acknowledgments** 
 
