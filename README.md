@@ -40,7 +40,7 @@ Simulation Details:
 - Nonbonded Cutoff: 1 Nanometer,
 - Constraints: HBonds
 
-If any of the simulation details look smaller than they should, it's because we didn't have the resources to run the simulation for any longer, as with an RTX 4060ti and Ryzen 5700h it still took 12 hours to run one simulation for one protein. We have 4 simulations to run for 1 complete set of data, and we don't have access to any fancy computers. So this was the best we could do with the resources we had.
+If any of the simulation details look smaller than they should, it's because we didn't have the resources to run the simulation for any longer, as with an RTX 4060ti and Ryzen 5 7600x it still took 12 hours to run one simulation for one protein. We have 4 simulations to run for 1 complete set of data, and we don't have access to any fancy computers. So this was the best we could do with the resources we had.
 
 ## How to Use
 
