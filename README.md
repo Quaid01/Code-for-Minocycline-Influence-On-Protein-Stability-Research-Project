@@ -8,6 +8,14 @@ This is the code for the research project that me and my friends did. The code u
 - Anthony Hur: Team leader, ran the 12 hour (each) simulations, wrote 25% of the code, and made sure everything went smoothly
 - Everyone Above: Helped with conceptualization and writing discussion
 
+**Acknowledgments** 
+A thank you to the developers of OpenMM and PyRoseTTA for providing the essential tools for this research.
+
+OpenMM Citation: Eastman, P., Galvelis, R., Peláez, R. P., Abreu, C. R. A., Farr, S. E., Gallicchio, E., Gorenko, A., Henry, M. M., Hu, F., Huang, J., Krämer, A., Michel, J., Mitchell, J. A., Pande, V. S., Rodrigues, J. PGLM., Rodriguez-Guerra, J., Simmonett, A. C., Singh, S., Swails, J., ... Markland, T. E. (2023). OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials. Journal of Physical Chemistry B, 128(1), 109-116. Advance online publication. https://doi.org/10.1021/acs.jpcb.3c06662 
+
+PyRoseTTA Citation: Chaudhury, S., Lyskov, S., & Gray, J. J. (2010). PyRosetta: A script-based interface for
+implementing molecular modeling algorithms using Rosetta. Bioinformatics, 26(5), 689–691. https://doi.org/10.1093/bioinformatics/btq007
+
 ## Project Overview
 
 Project Title: Novel Computational Framework: Investigating the Effect of Minocycline on Iba1 and CD163 Biomarkers in the Central Nervous System During Traumatic Brain Injury
@@ -39,16 +47,16 @@ Please note that this code will produce several files such as 2000 pdb files (< 
 
 Download the following files for simulations:
 
-- [Minocycline Force Field]
-- [Iba1 without Minocycline]
-- [Iba1 with Minocycline]
-- [CD163 without Minocycline]
-- [CD163 with Minocycline]
-- [Code for Negative Control (ONLY WORKS FOR THOSE PROTEINS WITHOUT MINOCYCLINE)]
-- [Code for Experimental (FOR WITH MINOCYCLINE)]
-- [Excel Template for Collecting Data]
+- [Minocycline Force Field](docs/Minocycline_FF.xml)
+- [Iba1 without Minocycline](docs/PDB-Files/2d58_control.pdb)
+- [Iba1 with Minocycline](docs/PDB-Files/2d58_minocycline.pdb)
+- [CD163 without Minocycline](docs/PDB-Files/6k0o_control.pdb)
+- [CD163 with Minocycline](docs/PDB-Files/6k0o_minocycline.pdb)
+- [Code for Negative Control (ONLY WORKS FOR THOSE PROTEINS WITHOUT MINOCYCLINE)](docs/Experimental.py)
+- [Code for Experimental (FOR WITH MINOCYCLINE)](docs/Control.py)
+- [Excel Template for Collecting Data](docs/Template-For-DATA.xlsx)
 
-The code is purely coded in Python, check the [Dependencies](#dependencies) section to download OpenMM and PyRoseTTA. 
+The code is purely coded in Python, with the exception of OpenMM and PyRoseTTA. They have Python APIs which were used in this code, check the [Dependencies](#dependencies) section to download OpenMM and PyRoseTTA. 
 
 ### Running the Code
 
@@ -84,6 +92,4 @@ The rest of the packages should be included if you use Conda, if not here are th
 
 This project is intended for academic and educational purposes only. Users are responsible for ensuring compliance with all dependencies' licensing terms.
 
-### Acknowledgments
 
-A thank you to the developers of OpenMM and PyRosetta for providing the essential tools for this research.
