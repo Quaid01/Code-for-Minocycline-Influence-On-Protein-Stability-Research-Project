@@ -9,6 +9,7 @@ This is the code for the research project that me and my friends did. The code u
 - Everyone Above: Helped with conceptualization and writing discussion
 
 **Acknowledgments** 
+
 A thank you to the developers of OpenMM and PyRoseTTA for providing the essential tools for this research.
 
 OpenMM Citation: Eastman, P., Galvelis, R., Peláez, R. P., Abreu, C. R. A., Farr, S. E., Gallicchio, E., Gorenko, A., Henry, M. M., Hu, F., Huang, J., Krämer, A., Michel, J., Mitchell, J. A., Pande, V. S., Rodrigues, J. PGLM., Rodriguez-Guerra, J., Simmonett, A. C., Singh, S., Swails, J., ... Markland, T. E. (2023). OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials. Journal of Physical Chemistry B, 128(1), 109-116. Advance online publication. https://doi.org/10.1021/acs.jpcb.3c06662 
@@ -91,5 +92,7 @@ The rest of the packages should be included if you use Conda, if not here are th
 ### **Disclaimer**
 
 This project is intended for academic and educational purposes only. Users are responsible for ensuring compliance with all dependencies' licensing terms.
+
+Once again, thank you to the developers of OpenMM and PyRoseTTA for providing the necessary software for this academic project. All softwares were used with an academic license and with the intent to produce an application-based research project with them.
 
 
