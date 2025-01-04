@@ -66,7 +66,7 @@ Make sure that all the files are in a single folder/directory that you will run 
 For help with some of the OpenMM things like `platform` and `platformProperties`, take a look at [OpenMM Setup](#https://github.com/openmm/openmm-setup) and go through with it and it will generate code for OpenMM simulations. There you can specify platform related settings and copy them to the code here. This was extremely useful when making the simulations and even the developers recommend using it.
 ## Dependencies, Licensing, and Attribution
 
-This repository is licensed under a **BSD 3-Clause License**. See [LICENSE](docs/LICENSE) for details.
+This repository is licensed under a **BSD 3-Clause License**. See [LICENSE](docs/LICENSE.txt) for details.
 
 ### Dependencies
 
