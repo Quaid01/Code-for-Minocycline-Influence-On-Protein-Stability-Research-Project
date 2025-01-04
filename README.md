@@ -3,9 +3,9 @@
 This is the code for the research project that me and my friends did. The code uses OpenMM and PyRoseTTA as dependencies, so make sure that your operating system supports them (along with Python of course).
 
 **Here is credit where credit is due** _(Not for dependencies, just who directly contributed to this project)_**:**
-- Ali Zahid: Wrote 95% of the code, helped with Excel graphs, dealt with the statistics, wrote the methods section and anything else really technical
+- Ali Zahid: Wrote 75% of the code, helped with Excel graphs, dealt with the statistics, wrote the methods section and anything else really technical
 - Owen Zhang: Wrote the introduction for the paper, helped with conceptualization and background information
-- Anthony Hur: Team leader, ran the 12 hour (each) simulations and made sure everything went smoothly
+- Anthony Hur: Team leader, ran the 12 hour (each) simulations, wrote 25% of the code, and made sure everything went smoothly
 - Everyone Above: Helped with conceptualization and writing discussion
 
 ## Project Overview
@@ -25,7 +25,7 @@ Simulation Details:
 - Integrator: Langevin Middle Integrator
 - Temperature: 312K
 - Friction: 1/Picosecond
-- Force Fields: 'protein.ff14SB.xml', 'implicit/obc1.xml', ('UNK_6D5600.xml' for experimental)
+- Force Fields: 'protein.ff14SB.xml', 'implicit/obc1.xml', ('Minocycline_FF.xml' for experimental)
 - Solvent Type: Implicit
 - Nonbonded Method: CutoffNonPeriodic 
 - Nonbonded Cutoff: 1 Nanometer,
@@ -54,12 +54,13 @@ The code is purely coded in Python, check the [Dependencies](#https://github.com
 
 Make sure that all the files are in a single folder/directory that you will run the code from. Simply open up the code and edit a handful of set values:
 
-- `output_file_excel_name`: used to change the name of the output Excel File (.xlsx)
-- `protein`: Change the name inside the brackets to one of the names of the protein that is stored in the `proteins` dictionary
-- `platform`: Change the platform name to one of the ones mentioned [here](#), OpenMM has optimization for NVIDIA GPU's, but any GPU is ideal. Take a look at the OpenMM documentation for more information or look online.
-- `simulation_drug.reporters.append(
-    DCDReporter('trajectory.dcd', reporting_steps)`: Change the `trajectory.dcd` argument to another name with the .dcd extension to change the name of the trajectory output file
+- `output_file_excel_name`: Used to change the name of the output Excel File (.xlsx); ***Do NOT add the file extenstion, that is added during the code***
+- `protein_choice`: Change the name inside the brackets to one of the names of the protein that is stored in the `proteins` dictionary
+- `platform`: Change the platform name to one of the ones mentioned [here](#http://docs.openmm.org/latest/userguide/library/04_platform_specifics.html), OpenMM has optimization for NVIDIA GPU's, but any GPU is ideal. Take a look at the [OpenMM documentation](#http://docs.openmm.org/latest/userguide/) for more information or look online.
+- `platformProperties`: Specify things that the simulation should run on, its dependent on what you put for `platform`; take a look at the [OpenMM Documentation on Platforms](#http://docs.openmm.org/latest/userguide/library/04_platform_specifics.html) for more information 
+- `trajectory_name`: Change the name of the output trajectory file; ***Do NOT add the file extenstion, that is added during the code***
 
+For help with some of the OpenMM things like `platform` and `platformProperties`, take a look at [OpenMM Setup](#https://github.com/openmm/openmm-setup) and go through with it and it will generate code for OpenMM simulations. There you can specify platform related settings and copy them to the code here. This was extremely useful when making the simulations and even the developers recommend using it.
 ## Dependencies, Licensing, and Attribution
 
 This repository is licensed under a **BSD 3-Clause License**. See [LICENSE](docs/LICENSE) for details.
