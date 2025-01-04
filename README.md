@@ -5,8 +5,8 @@ This is the code for the research project that me and my friends did. The code u
 **Here is credit where credit is due** _(Not for dependencies, just who directly contributed to this project)_**:**
 - Ali Zahid: Wrote 75% of the code, helped with Excel graphs, dealt with the statistics, wrote the methods section and anything else really technical
 - Owen Zhang: Wrote the introduction for the paper, helped with conceptualization and background information
-- Anthony Hur: Team leader, ran the 12 hour (each) simulations, wrote 25% of the code, and made sure everything went smoothly
-- Everyone Above: Helped with conceptualization and writing discussion
+- Anthony Hur: Team leader, ran the 12 hour (each) simulations, wrote 25% of the code, and made the figures
+- Everyone Above: Helped with conceptualization, writing discussion, and overall improving the quality of the paper
 
 **Acknowledgments** 
 
