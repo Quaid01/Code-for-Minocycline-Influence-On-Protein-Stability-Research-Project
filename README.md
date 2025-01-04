@@ -48,7 +48,7 @@ Download the following files for simulations:
 - [Code for Experimental (FOR WITH MINOCYCLINE)]
 - [Excel Template for Collecting Data]
 
-The code is purely coded in Python, check the [Dependencies](#https://github.com/Quaid01/Code-for-Minocycline-Influence-On-Protein-Stability-Research-Project/edit/main/README.md#dependencies) section to download OpenMM and PyRoseTTA. 
+The code is purely coded in Python, check the [Dependencies](#dependencies) section to download OpenMM and PyRoseTTA. 
 
 ### Running the Code
 
